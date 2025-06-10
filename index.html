@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechCommunity - Início</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+
+  <header>
+    <div class="logo">TechCommunity</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="detalhes-eventos.html">Detalhes Eventos</a></li>
+        <li><a href="cadastrar-evento.html">Cadastrar Eventos</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destaque">
+      <h1>Todos os Nossos Eventos</h1>
+      <div class="eventos-container" id="eventos-destaque">
+        <!-- Eventos serão carregados dinamicamente aqui via JS -->
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
