@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+  <header>
+    <div class="logo">TechCommunity</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="detalhes-eventos.html">Detalhes Eventos</a></li>
+        <li><a href="cadastrar-evento.html">Cadastrar Eventos</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+        <section id="detalhes"></section>
+        <section>
+            <h2>Inscreva-se</h2>
+            <form id="form-inscricao">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <button type="submit">Inscrever-se</button>
+            </form>
+            <p id="msg-inscricao"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechCommunity</p>
+    </footer>
+    <script type="module" src="scripts/detalhes.js"></script>
 </body>
 </html>
