@@ -87,46 +87,58 @@ h1 {
 }
 
 /*página sobre nós - raissa*/ 
-#sobre {
-  background-color: #fbb5c0; /* Fundo suave e chamativo */
-  padding: 60px 0;
+.sobre-nos {
+  background-color: #FCE9BF; 
+  color: #813843; 
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sobre-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sobre-header h1 {
+  font-size: 2.5rem;
+  color: #F5005B; 
+  margin-bottom: 10px;
+}
+
+.sobre-header .slogan {
+  font-size: 1.2rem;
+  color: #FC9F13; 
+  font-weight: bold;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #FBB5C0; 
+}
+
+.sobre-texto {
+  max-width: 500px;
+}
+
+.sobre-texto h2 {
+  color: #C8BD4A; 
+  font-size: 1.5rem;
   margin-top: 20px;
 }
 
-#sobre h2 {
-  font-size: 3rem;
-  color: #813843;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#sobre h3 {
-  font-size: 2rem;
-  margin-top: 30px;
-  color: #813843;
-  text-align: center;
-}
-
-#sobre p {
-  font-size: 1.25rem;
-  color: #813843;
-  text-align: justify;
-  line-height: 1.8;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0 20px;
-}
-
-/* Rodapé */
-footer {
-  background-color: #813843;
-  color: #fce9bf;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-footer p {
+.sobre-texto p {
+  color: #333;
   font-size: 1rem;
+  margin: 10px 0;
 }
