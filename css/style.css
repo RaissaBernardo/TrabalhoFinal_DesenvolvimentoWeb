@@ -85,3 +85,48 @@ h1 {
   font-size: 0.9em;
   color: #333;
 }
+
+/*página sobre nós - raissa*/ 
+#sobre {
+  background-color: #fbb5c0; /* Fundo suave e chamativo */
+  padding: 60px 0;
+  margin-top: 20px;
+}
+
+#sobre h2 {
+  font-size: 3rem;
+  color: #813843;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#sobre h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #813843;
+  text-align: center;
+}
+
+#sobre p {
+  font-size: 1.25rem;
+  color: #813843;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #813843;
+  color: #fce9bf;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
