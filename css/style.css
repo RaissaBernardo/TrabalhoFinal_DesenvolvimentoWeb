@@ -1,3 +1,4 @@
+/*página index - rafael*/ 
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f6fc;
@@ -28,19 +29,100 @@ nav ul {
   margin: 0;
 }
 
-nav a {
+nav ul li a {
+  position: relative;
   color: white;
   text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  background-color: transparent;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 h1 {
   text-align: center;
-  color: #813843;;
+  color: #813843;
   margin-top: 30px;
+}
+
+.cards {       /*Cards dos eventos*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(129, 56, 67, 0.3);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* mostra a imagem inteira */
+  background-color: #fdfdfd; /* fundo claro para imagens com transparência */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 8px;
+  color: #167aec;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.card p strong {
+  color: #000;
+  font-weight: bold;
 }
 
 .eventos-container {
@@ -56,7 +138,7 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 0 10px #431d22;;
+  box-shadow: 0 0 10px #431d22;
   overflow: hidden;
   transition: transform 0.3s;
 }
@@ -66,9 +148,9 @@ h1 {
 }
 
 .card-evento img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  width: 200%;
+  height: 150px;
+  object-fit: contain; /* Para mostrar a imagem inteira */
 }
 
 .card-evento .info {
@@ -77,7 +159,7 @@ h1 {
 
 .card-evento h3 {
   margin: 0 0 10px;
-  color: #813843;;
+  color: #813843;
 }
 
 .card-evento p {
@@ -86,13 +168,14 @@ h1 {
   color: #333;
 }
 
+
 footer{
   background-color: black;
   text-align: center;
   padding: 30px;
   color: white;
 }
-
+/*fim da página index - rafael*/ 
 /*página sobre nós - raissa*/ 
 .sobre-nos {
   background-color: #FCE9BF; 
@@ -150,3 +233,44 @@ footer{
   margin: 10px 0;
 }
 
+/* Pagina evento - Rafael */
+
+.evento {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.evento h2 {
+  color: #167aec;
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.evento-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.evento-img {
+  width: 430px;
+  height: auto;
+}
+
+.evento-info {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.evento-info p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+/* Fim da parte do Evento (Rafael) */
