@@ -13,8 +13,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="detalhes-eventos.html">Detalhes Eventos</a></li>
+        <li><a href="detalhesEventos.html">Detalhes Eventos</a></li>
         <li><a href="cadastrar-evento.html">Cadastrar Eventos</a></li>
         <li><a href="sobre.html">Sobre Nós</a></li>
         <li><a href="contato.html">Contato</a></li>
@@ -23,6 +22,9 @@
   </header>
 
   <main>
+    <input type="text" id="campoBusca" placeholder="Exemplo: HTML e CSS">
+    <button onclick="buscarNaPagina()">🔎</button>
+
     <section class="destaque">
       <h1>Todos os Nossos Eventos</h1>
       <div class="eventos-container" id="eventos-destaque">
@@ -82,12 +84,11 @@
       </div>
     </section>
   </main>
+  <script src="js/script.js"></script> <!-- remove o type="module" -->
 
   <footer>
     <p>Todos os direitos reservados &copy; 2025</p>
   </footer>
-
-  <script type="module" src="js/script.js"></script>
 </body>
 </html>
 

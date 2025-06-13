@@ -21,6 +21,25 @@ header .logo {
   font-weight: bold;
 }
 
+#campoBusca {
+  padding: 8px;
+  margin: 20px 0;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+button {
+  padding: 8px 10px;
+  cursor: pointer;
+  background-color: #ff6363;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -170,7 +189,7 @@ h1 {
 
 
 footer{
-  background-color: black;
+  background-color: #813843;
   text-align: center;
   padding: 30px;
   color: white;
@@ -178,7 +197,7 @@ footer{
 /*fim da página index - rafael*/ 
 /*página sobre nós - raissa*/ 
 .sobre-nos {
-  background-color: #FCE9BF; 
+  background-color: #ffffff; 
   color: #813843; 
   padding: 50px 20px;
   font-family: Arial, sans-serif;
