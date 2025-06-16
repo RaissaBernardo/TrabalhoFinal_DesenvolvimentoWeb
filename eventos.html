@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechCommunity - Início</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">TechCommunity</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="detalhesEventos.html">Detalhes Eventos</a></li>
+        <li><a href="cadastrar-evento.html">Cadastrar Eventos</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <input type="text" id="campoBusca" placeholder="Exemplo: HTML e CSS">
+    <button onclick="buscarNaPagina()">🔎</button>
+
+    <section class="destaque">
+      <h1>Todos os Nossos Eventos</h1>
+      <div class="eventos-container" id="eventos-destaque">
+        <div class="cards">
+
+          <div class="card">
+            <img src="Img/cursojs.jpg" alt="Workshop de Introdução ao JavaScript">
+            <h3>Workshop de Introdução ao JavaScript</h3>
+            <p><strong>Data:</strong> 15-07-2025</p>
+            <p><strong>Hora:</strong> 19:00</p>
+            <p><strong>Localização:</strong> Auditório Principal - Centro de Tecnologia</p>
+            <p><strong>Descrição:</strong> Aprenda os fundamentos do JavaScript, a linguagem essencial para o desenvolvimento web. Ideal para iniciantes!</p>
+            <p><strong>Categoria:</strong> Workshop</p>
+          </div>
+
+          <div class="card">
+            <img src="Img/boaspraticashtmlcss.jpg" alt="Meetup: Boas Práticas em HTML e CSS">
+            <h3>Meetup: Boas Práticas em HTML e CSS</h3>
+            <p><strong>Data:</strong> 22-07-2025</p>
+            <p><strong>Hora:</strong> 18:30</p>
+            <p><strong>Localização:</strong> Sala de Eventos A - Coworking Tech</p>
+            <p><strong>Descrição:</strong> Um bate-papo descontraído sobre como escrever HTML semântico e CSS eficiente para seus projetos web.</p>
+            <p><strong>Categoria:</strong> Meetup</p>
+          </div>
+
+          <div class="card">
+            <img src="Img/projetointegrador.jpg" alt="Palestra: Carreira em Desenvolvimento Front-end">
+            <h3>Palestra: Carreira em Desenvolvimento Front-end</h3>
+            <p><strong>Data:</strong> 05-08-2025</p>
+            <p><strong>Hora:</strong> 19:30</p>
+            <p><strong>Localização:</strong> Auditório Principal - Centro de Tecnologia</p>
+            <p><strong>Descrição:</strong> Descubra os caminhos e desafios da carreira em desenvolvimento front-end, com dicas de quem já está na área.</p>
+            <p><strong>Categoria:</strong> Palestra</p>
+          </div>
+
+          <div class="card">
+            <img src="Img/codingdojo.jpg" alt="Coding Dojo: Resolvendo Problemas com Python">
+            <h3>Coding Dojo: Resolvendo Problemas com Python</h3>
+            <p><strong>Data:</strong> 18-08-2025</p>
+            <p><strong>Hora:</strong> 18:00</p>
+            <p><strong>Localização:</strong> Laboratório de Inovação - Universidade Local</p>
+            <p><strong>Descrição:</strong> Pratique suas habilidades de programação em Python resolvendo desafios em grupo. Traga seu notebook!</p>
+            <p><strong>Categoria:</strong> Coding Dojo</p>
+          </div>
+
+          <div class="card">
+            <img src="Img/webinar.png" alt="Webinar: Ferramentas Essenciais para Desenvolvedores">
+            <h3>Webinar: Ferramentas Essenciais para Desenvolvedores</h3>
+            <p><strong>Data:</strong> 01-09-2025</p>
+            <p><strong>Hora:</strong> 20:00</p>
+            <p><strong>Localização:</strong> Online (Link será enviado por e-mail)</p>
+            <p><strong>Descrição:</strong> Explore as ferramentas e softwares que todo desenvolvedor web deveria conhecer para otimizar seu fluxo de trabalho.</p>
+            <p><strong>Categoria:</strong> Webinar</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script> <!-- remove o type="module" -->
+
+  <footer>
+    <p>Todos os direitos reservados &copy; 2025</p>
+  </footer>
+</body>
+</html>
+
