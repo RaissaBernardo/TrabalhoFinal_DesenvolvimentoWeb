@@ -293,3 +293,110 @@ footer{
 }
 
 /* Fim da parte do Evento (Rafael) */
+
+
+/*CSS Contato - Pedro*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #edf3fa;
+}
+
+.top-bar {
+  background-color: #7c2a34;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #222;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #7c2a34;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a13445;
+}
+
+.footer {
+  background-color: #7c2a34;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.company-info {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.company-info h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.company-info p {
+  margin: 6px 0;
+  font-size: 14px;
+}
