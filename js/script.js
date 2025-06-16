@@ -80,3 +80,49 @@ window.onclick = function (event) {
     fecharModal();
   }
 };
+
+
+//Parte do Index (Rafael)
+// Ordena os eventos por data (mais próximos primeiro)
+function ordenarPorData(a, b) {
+  return new Date(a.data) - new Date(b.data);
+}
+
+// Função para renderizar os cards dos eventos
+function renderizarEventos(listaEventos, classeCard) {
+  const container = document.getElementById('eventos-destaque');
+  if (!container) return; // Se não existir o container na página, não faz nada
+  container.innerHTML = ""; // Limpa o conteúdo anterior
+
+  listaEventos.forEach(evento => {
+    const card = document.createElement('div');
+    card.classList.add(classeCard);
+    card.innerHTML = `
+      <img src="${evento.imagem}" alt="${evento.titulo}">
+      <h3>${evento.titulo}</h3>
+      <p><strong>Data:</strong> ${evento.data}</p>
+      <p><strong>Hora:</strong> ${evento.hora}</p>
+      <p><strong>Localização:</strong> ${evento.local}</p>
+      <p><strong>Descrição:</strong> ${evento.descricao}</p>
+      <p><strong>Categoria:</strong> ${evento.categoria}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Detecta em qual página está
+const pagina = window.location.pathname;
+
+// Página Index (exibe os 3 próximos eventos)
+if (pagina.includes('index.html') || pagina === '/' || pagina === '/index.html') {
+  const hoje = new Date();
+  const eventosFuturos = eventos.filter(e => new Date(e.data) >= hoje);
+  const eventosOrdenados = eventosFuturos.sort(ordenarPorData);
+  const eventosProximos = eventosOrdenados.slice(0, 3);
+  renderizarEventos(eventosProximos, 'card');
+
+// Página Eventos (exibe todos os eventos)
+} else if (pagina.includes('eventos.html')) {
+  const eventosOrdenados = eventos.sort(ordenarPorData);
+  renderizarEventos(eventosOrdenados, 'card');
+}
